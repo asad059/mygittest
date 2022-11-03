@@ -1,2 +1,125 @@
 Hello Everyone 
 Wecome to Github test
+┌──(root💀kali)-[/home/kali/Desktop/CEH]
+└─# mkdir mytestgit                                                                           1 ⨯
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH]
+└─# ls
+change.txt  friends.txt  mytestgit   RIP.txt     xyz.txt
+Devops.txt  hello.sh     python.txt  system.txt
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH]
+└─# cd mytestgit             
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# ls
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git init      
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/kali/Desktop/CEH/mytestgit/.git/
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# ls -a
+.  ..  .git
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# vim devops.txt        
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        devops.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# vim mss.sh    
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        devops.txt
+        mss.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git add . 
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   devops.txt
+        new file:   mss.sh
+
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git commit -m "First commit"                                  
+[master (root-commit) a8ed59d] First commit
+ 2 files changed, 3 insertions(+)
+ create mode 100644 devops.txt
+ create mode 100644 mss.sh
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git status                  
+On branch master
+nothing to commit, working tree clean
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git config --global --list                              
+user.email=asadshahid930@gmail.com
+user.name=asad059
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git remote add asad https://github.com/asad059/mygittest.git     
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git remote -v                                               
+asad    https://github.com/asad059/mygittest.git (fetch)
+asad    https://github.com/asad059/mygittest.git (push)
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git push asad master  
+Username for 'https://github.com': asad059       
+Password for 'https://asad059@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 295 bytes | 295.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/asad059/mygittest.git
+ * [new branch]      master -> master
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# git branch          
+* master
+                                                                                                  
+┌──(root💀kali)-[/home/kali/Desktop/CEH/mytestgit]
+└─# 
+
